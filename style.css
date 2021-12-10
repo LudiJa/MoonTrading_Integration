@@ -1,0 +1,323 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #c4e3ff;
+  background-color: #0a184c;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+main {
+  width: 70%;
+  margin: auto;
+}
+
+@media screen and (max-width: 500px) {
+  main {
+    width: 95%;
+    margin: 0 auto;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+ul li {
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  text-transform: uppercase;
+  color: white;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+}
+
+.logo img {
+  margin-right: 1em;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+nav ul li {
+  margin-left: 7em;
+  color: lightgray;
+  font-size: 13px;
+}
+
+nav ul li a {
+  padding-bottom: 6px;
+}
+
+nav ul li a:hover {
+  border-image: linear-gradient(to right, #24ddcd 60%, #0a184c 40%);
+  box-sizing: content-box;
+  border-width: 4px;
+  border-bottom-style: solid;
+  border-image-slice: 1;
+}
+
+.debut {
+  width: 100%;
+  height: 580px;
+  background: url(assets/ill01.svg) no-repeat bottom right;
+  background-size: 45%;
+}
+
+h1 {
+  font-size: 60px;
+  margin-bottom: 20px;
+}
+
+h2 {
+  color: #1481ca;
+  font-size: 30px;
+}
+
+form {
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+input {
+  background-color: #3f4880;
+  width: 25%;
+  border: none;
+  border-radius: 5px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  padding: 15px;
+}
+
+button {
+  width: 25%;
+  border-radius: 5px;
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+  border: none;
+  padding: 15px;
+  background: linear-gradient(to bottom right, #60dca7, #3080eb);
+  text-transform: uppercase;
+  font-weight: bold;
+  color: white;
+}
+
+@media screen and (max-width: 700px) {
+  .debut {
+    background: none;
+  }
+  .debut div {
+    width: 100%;
+  }
+
+  input {
+    width: 50%;
+  }
+  button {
+    width: 50%;
+  }
+}
+
+.features i {
+  border: solid 1px lightgray;
+  padding: 17px 17px;
+  border-radius: 5px;
+  border-top: none;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  color: #1481ca;
+}
+
+.features {
+  text-align: center;
+  margin-top: 150px;
+  font-size: 25px;
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.cards {
+  width: 25%;
+  margin: auto;
+  text-align: center;
+  background: linear-gradient(to bottom right, #0a184c, #13256c);
+  border-bottom-right-radius: 15px;
+  padding: 25px 17px;
+  margin: 10px 10px;
+}
+
+@media screen and (max-width: 700px) {
+  .card {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .cards {
+    width: 95%;
+  }
+}
+
+.cards img {
+  width: 20%;
+  margin: auto;
+}
+
+h3 {
+  font-weight: normal;
+  color: #1481ca;
+  margin: 50px auto;
+}
+
+hr {
+  width: 20%;
+  margin: auto;
+}
+
+.read {
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-top: 40px;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+  width: 100%;
+}
+
+.up {
+  display: flex;
+  gap: 20%;
+  margin-bottom: 2%;
+}
+
+.up .logo {
+  width: 40%;
+}
+
+.central {
+  display: flex;
+  gap: 20%;
+}
+
+.central p {
+  width: 40%;
+}
+
+.central form {
+  height: 40%;
+  margin: 0;
+  width: 40%;
+}
+
+.central form input {
+  width: 50%;
+}
+
+.central form button {
+  width: 50%;
+}
+
+.rs {
+  display: flex;
+  gap: 20%;
+  margin: 2% 0;
+}
+
+.rs span {
+  width: 40%;
+}
+
+.rs ul {
+  display: flex;
+}
+
+.rs ul li {
+  margin-right: 20px;
+}
+
+.bottom {
+  display: flex;
+  color: gray;
+  text-transform: uppercase;
+  gap: 20%;
+}
+
+.bottom .copy {
+  width: 40%;
+}
+
+.copy p {
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.legal {
+  display: flex;
+}
+
+.legal li {
+  margin-right: 40px;
+}
+
+@media screen and (max-width: 700px) {
+  footer .up {
+    flex-direction: column;
+  }
+
+  .central {
+    flex-direction: column;
+  }
+
+  .central form {
+    width: 100%;
+  }
+
+  .rs {
+    flex-direction: column;
+  }
+
+  .bottom {
+    flex-direction: column;
+    font-size: small;
+  }
+
+  .bottom .copy {
+    width: 100%;
+  }
+
+  .legal {
+    width: 100%;
+  }
+}
